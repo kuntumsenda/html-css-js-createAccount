@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: verdana;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 35% 1fr;
+}
+
+.containerBiru{
+    background-color: #3c1ab1;
+    background-image: linear-gradient(to right, #3c1ab1, #4b22c7);
+    padding: 150px 50px 350px;
+}
+
+.containerPutih{
+    margin: 0 auto;
+    width: 350px;
+    padding-top: 150px;
+}
+
+/* --------------end container-------------- */
+
+.imgHeader{
+    position: absolute;
+    top: 0;
+    right: 380;
+    max-width: 100%;
+}
+
+h1{
+    color: #fff;
+}
+
+.logo{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.iconToga{
+    max-width: 10%;
+}
+
+.fa-clipboard-list{
+    color: #f5eb61;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.btnGoogle{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #cac9cc;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #414040;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btnGoogle img{
+    max-width: 5%;
+}
+
+.space{
+    padding: 30px 0;
+    color: #A8A8A8;
+}
+
+.space label {
+    padding: 12px;
+}
+
+.form-control > label, p {
+    display: inline-block;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form-control > label > span {
+    color: #e40707;
+}
+
+.form-control > input, .form-control > select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #A8A8A8;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.success small{
+    color: #2ecc71;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+.signUp{
+    width: 100%;
+    padding: 7px;
+    background-color: #3c1ab1;
+    background-image: linear-gradient(to right, #3c1ab1, #4b22c7);
+    color: #A8A8A8;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #3c1ab1;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.signIn{
+    padding-top: 95px;
+    text-align: center;
+}
+
+.linkSignIn{
+    color: #3c1ab1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.imgFooter{
+    max-width: 100%;
+    position: absolute;
+}
+
+.imgFooter1{
+    left: 0;
+    top: 650px;
+}
+
+.imgFooter2{
+    left: 100px;
+    top: 550px;
+}
+
+span{
+    color: #e40707;
+}
+
+/* -------------media screen----------- */
+
+@media screen and (max-width: 770px){
+    .container{
+        display: block;
+    }
+
+    .containerBiru{
+        padding-bottom: 150px;
+        padding-top: 30px;
+    }
+
+    .containerPutih{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .imgHeader{
+        display: none;
+    }
+    .imgFooter1{
+        position: absolute;
+        max-width: 15%;
+        top: 375px;
+    }
+
+    .imgFooter2{
+        position: absolute;
+        max-width: 15%;
+        top: 325px;
+        left: 50px
+    }
+
+}
+
+@media screen and (min-width: 771px) and (max-width: 1200px) {
+    .imgFooter1{
+        position: absolute;
+        top: 730px;
+    }
+
+    .imgFooter2{
+        position: absolute;
+        top: 630px;
+    }
+}
